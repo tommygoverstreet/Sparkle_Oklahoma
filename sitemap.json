@@ -1,0 +1,108 @@
+{
+  "site": "https://sparkleoklahoma.com",
+  "generated_at": "2026-08-03T23:11:00-05:00",
+  "pages": [
+    {
+      "loc": "https://sparkleoklahoma.com/",
+      "title": "Home",
+      "priority": 1.0,
+      "changefreq": "weekly",
+      "section": "home"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/#about",
+      "title": "About Us",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "section": "about"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/#services",
+      "title": "Cleaning Services",
+      "priority": 0.95,
+      "changefreq": "weekly",
+      "section": "services",
+      "children": [
+        {
+          "loc": "https://sparkleoklahoma.com/#services",
+          "service": "Residential Cleaning"
+        },
+        {
+          "loc": "https://sparkleoklahoma.com/#services",
+          "service": "Commercial Cleaning"
+        },
+        {
+          "loc": "https://sparkleoklahoma.com/#services",
+          "service": "Deep Cleaning"
+        }
+      ]
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/#reviews",
+      "title": "Client Reviews",
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "section": "reviews"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/#faq",
+      "title": "Frequently Asked Questions",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "section": "faq",
+      "faq_items": [
+        {
+          "question": "What areas does Sparkle Oklahoma serve?",
+          "answer": "We serve Oklahoma City, Yukon, Mustang, Bethany, Moore, Edmond, and nearby communities."
+        },
+        {
+          "question": "What cleaning services do you offer?",
+          "answer": "We provide residential cleaning, commercial cleaning, and deep cleaning for homes and businesses."
+        },
+        {
+          "question": "How do I book a cleaning?",
+          "answer": "Call 405-409-3466 or submit the contact form on our website."
+        },
+        {
+          "question": "Do you offer eco-friendly cleaning products?",
+          "answer": "Yes, eco-friendly cleaning products are available upon request."
+        }
+      ]
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/#contact",
+      "title": "Contact",
+      "priority": 0.9,
+      "changefreq": "weekly",
+      "section": "contact"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/sitemap.txt",
+      "title": "Text Sitemap",
+      "priority": 0.5,
+      "changefreq": "monthly",
+      "section": "sitemap"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/.well-known/security.txt",
+      "title": "Security Policy",
+      "priority": 0.4,
+      "changefreq": "yearly",
+      "section": "well-known"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/.well-known/ai.txt",
+      "title": "AI Crawler Policy",
+      "priority": 0.4,
+      "changefreq": "yearly",
+      "section": "well-known"
+    },
+    {
+      "loc": "https://sparkleoklahoma.com/.well-known/humans.txt",
+      "title": "Humans File",
+      "priority": 0.4,
+      "changefreq": "yearly",
+      "section": "well-known"
+    }
+  ]
+}
