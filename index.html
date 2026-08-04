@@ -4,20 +4,19 @@
   <meta charset="UTF-8" />
   <title>Sparkle Oklahoma | Residential & Commercial Cleaning in OKC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Primary SEO Meta -->
   <meta name="description" content="Sparkle Oklahoma provides residential, commercial, and deep cleaning services across Oklahoma City and surrounding areas. Reliable, detail-driven cleaning for homes and businesses." />
-  <meta name="keywords" content="Oklahoma City cleaning services, residential cleaning OKC, commercial cleaning OKC, deep cleaning OKC, office cleaning Oklahoma" />
+
+  <!-- Favicon & Logo -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon-512.png" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Sparkle Oklahoma | Residential & Commercial Cleaning in OKC" />
   <meta property="og:description" content="Reliable, detail-driven residential and commercial cleaning services in Oklahoma City." />
   <meta property="og:url" content="https://sparkleoklahoma.com" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://sparkleoklahoma.com/wp-content/uploads/2024/09/logo.png" />
-
-  <link rel="canonical" href="https://sparkleoklahoma.com/" />
-
+  <meta property="og:image" content="assets/icon-512.png" />
 
   <!-- Schema JSON-LD -->
   <script type="application/ld+json">
@@ -25,11 +24,11 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Sparkle Oklahoma",
-    "image": "https://sparkleoklahoma.com/wp-content/uploads/2024/09/logo.png",
+    "image": "https://sparkleoklahoma.com/assets/icon-512.png",
     "url": "https://sparkleoklahoma.com",
     "telephone": "405-409-3466",
     "email": "shanklinemma@gmail.com",
-    "description": "Sparkle Oklahoma provides residential, commercial, and deep cleaning services across Oklahoma City and surrounding areas. Reliable, detail-driven cleaning for homes and businesses.",
+    "description": "Sparkle Oklahoma provides residential, commercial, and deep cleaning services across Oklahoma City and surrounding areas.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Oklahoma City",
@@ -47,11 +46,7 @@
       "Edmond"
     ],
     "openingHours": "Mo-Su 08:00-18:00",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/sparkleoklahoma",
-      "https://www.instagram.com/sparkleoklahoma"
-    ]
+    "priceRange": "$$"
   }
   </script>
 
@@ -81,7 +76,7 @@
         "name": "How do I book a cleaning?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can call 405-409-3466 or submit the contact form on our website to schedule your cleaning."
+          "text": "You can call 405-409-3466 or submit the contact form on our website."
         }
       },
       {
@@ -96,25 +91,13 @@
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Sparkle Oklahoma",
-    "url": "https://sparkleoklahoma.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://sparkleoklahoma.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">Sparkle Oklahoma</div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Sparkle Oklahoma Logo" class="logo-img" />
+    </div>
     <nav class="nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -123,30 +106,40 @@
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="header-actions">
+      <button id="themeToggle" class="btn secondary" aria-label="Toggle theme">🌙</button>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
 
   <main>
     <!-- Hero -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>A Cleaner Space. A Brighter Day.</h1>
-        <p>Your home or business deserves a fresh start. Sparkle Oklahoma delivers reliable, detail‑driven cleaning that makes every room feel better than new.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn primary">Get Clean</a>
-          <a href="#contact" class="btn secondary">Request a Quote</a>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>A Cleaner Space. A Brighter Day.</h1>
+          <p>Your home or business deserves a fresh start. Sparkle Oklahoma delivers reliable, detail‑driven cleaning that makes every room feel better than new.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Get Clean</a>
+            <a href="#contact" class="btn secondary">Request a Quote</a>
+          </div>
+          <p class="hero-sub">Residential • Commercial • Deep Cleaning • Oklahoma City Metro</p>
         </div>
-        <div class="hero-sub">
-          <span>Residential • Commercial • Deep Cleaning • Oklahoma City Metro</span>
+        <div class="hero-image">
+          <img src="https://source.unsplash.com/600x400/?cleaning,home" alt="Sparkle Oklahoma cleaning service" />
         </div>
+        <!-- Sparkles -->
+        <div class="sparkle" style="top: 20%; left: 10%; animation-delay: 0.2s;"></div>
+        <div class="sparkle" style="top: 45%; left: 80%; animation-delay: 0.8s;"></div>
+        <div class="sparkle" style="top: 70%; left: 30%; animation-delay: 1.4s;"></div>
       </div>
     </section>
 
     <!-- Why Sparkle -->
-    <section class="section" id="why">
+    <section id="why" class="section alt">
       <div class="container">
         <h2>Why Sparkle Oklahoma</h2>
-        <p>Your space is personal — and we treat it that way. As a locally owned OKC cleaning company, we bring consistency, care, and professionalism to every visit.</p>
+        <p>We’re a locally owned cleaning company that treats your space like our own. Consistency, care, and professionalism are at the heart of everything we do.</p>
         <div class="grid four">
           <div class="card">
             <h3>Trusted Team</h3>
@@ -169,17 +162,15 @@
     </section>
 
     <!-- About -->
-    <section class="section alt" id="about">
+    <section id="about" class="section">
       <div class="container">
         <h2>About Sparkle Oklahoma</h2>
-        <p>Sparkle Oklahoma was built on a simple belief: a clean space makes life better. We serve families, businesses, and property owners across Oklahoma City with reliable cleaning and genuine care.</p>
         <div class="grid two">
           <div>
-            <h3>Our Story</h3>
-            <p>What started as a small local service has grown into a trusted cleaning partner for homes and businesses throughout OKC. We’re proud to bring consistency, professionalism, and a personal touch to every job.</p>
+            <p>Sparkle Oklahoma was built on a simple belief: a clean space makes life better. We serve families, businesses, and property owners across Oklahoma City with reliable cleaning and genuine care.</p>
+            <p>From busy households to growing offices, we bring consistency, professionalism, and a personal touch to every visit.</p>
           </div>
           <div>
-            <h3>Our Values</h3>
             <ul class="list">
               <li><strong>Quality:</strong> Every room, every visit, every detail.</li>
               <li><strong>Trust:</strong> Background‑checked cleaners and dependable scheduling.</li>
@@ -192,13 +183,14 @@
     </section>
 
     <!-- Services -->
-    <section class="section" id="services">
+    <section id="services" class="section alt">
       <div class="container">
         <h2>Cleaning Services</h2>
         <p>Sparkle Oklahoma provides high‑quality cleaning services designed to fit your schedule, your space, and your standards.</p>
 
         <div class="grid three">
           <div class="card">
+            <img src="https://source.unsplash.com/600x400/?cleaning,kitchen" alt="Residential cleaning" class="card-img" />
             <h3>Residential Cleaning</h3>
             <p>Perfect for busy families, homeowners, renters, and Airbnb hosts.</p>
             <ul class="list">
@@ -208,10 +200,10 @@
               <li>Vacuuming & mopping</li>
               <li>Bedrooms & living areas refreshed</li>
             </ul>
-            <p><strong>Add‑Ons:</strong> Inside fridge, inside oven, baseboards, interior windows.</p>
           </div>
 
           <div class="card">
+            <img src="https://source.unsplash.com/600x400/?office,cleaning" alt="Commercial cleaning" class="card-img" />
             <h3>Commercial Cleaning</h3>
             <p>Ideal for offices, retail stores, studios, and small businesses.</p>
             <ul class="list">
@@ -221,10 +213,10 @@
               <li>Floor care</li>
               <li>High‑touch surface disinfecting</li>
             </ul>
-            <p><strong>Scheduling:</strong> Daily, weekly, bi‑weekly, or custom plans.</p>
           </div>
 
           <div class="card">
+            <img src="https://source.unsplash.com/600x400/?scrub,cleaning" alt="Deep cleaning" class="card-img" />
             <h3>Deep Cleaning</h3>
             <p>For move‑ins, move‑outs, seasonal cleaning, or neglected spaces.</p>
             <ul class="list">
@@ -245,7 +237,7 @@
     </section>
 
     <!-- Reviews -->
-    <section class="section alt" id="reviews">
+    <section id="reviews" class="section">
       <div class="container">
         <h2>Client Reviews</h2>
         <div class="grid two">
@@ -261,8 +253,8 @@
       </div>
     </section>
 
-    <!-- FAQ (AEO) -->
-    <section class="section" id="faq">
+    <!-- FAQ -->
+    <section id="faq" class="section alt">
       <div class="container">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
@@ -295,7 +287,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="section alt" id="contact">
+    <section id="contact" class="section">
       <div class="container">
         <h2>Let’s Make Your Space Sparkle</h2>
         <p>Have questions or ready to book? Reach out — we respond quickly with scheduling and pricing options.</p>
@@ -366,8 +358,7 @@
         Oklahoma City, OK 73120
       </div>
       <div>
-        © 2026 Sparkle Oklahoma — All rights reserved. </ br> <a href="/sitemap.html">Sitemap</a>
-
+        © 2026 Sparkle Oklahoma — All rights reserved.
       </div>
     </div>
   </footer>
