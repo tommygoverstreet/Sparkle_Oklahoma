@@ -2,6 +2,19 @@
 A modern, responsive website built with **HTML**, **CSS**, and **JavaScript** for Sparkle Oklahoma — a residential and commercial cleaning company serving the Oklahoma City metro.  
 The site is fully optimized for **SEO**, **Local SEO**, and **AEO (Answer Engine Optimization)** to maximize visibility across Google, Bing, and AI search engines.
 
+## ✨ What's new in this redesign
+
+- **Distinct visual identity** — warm linen background, deep pine ink, teal brand color, and a gold "sparkle" accent, paired with Fraunces (display) and Inter (body) instead of a single generic sans-serif.
+- **Signature before/after slider** — a draggable hero element that visually sells the core promise ("dull" to "sparkling") instead of a generic stat-card hero.
+- **Instant estimate calculator** — a live, interactive pricing tool (home size, bathrooms, service type, frequency) that gives visitors a starting price range in seconds and funnels them to the contact form.
+- **Reviews carousel** — auto-advancing, swipe/keyboard accessible, pauses on hover/focus.
+- **Stylized service-area map** — replaces a plain list with a labeled dot-map of the metro.
+- **Refined FAQ accordion** — smooth height animation, rotating icon, matches the new type system.
+- **Sticky mobile call/quote bar** — appears once visitors scroll past the hero on small screens.
+- **Theme toggle respects system preference** on first visit, then remembers the user's choice.
+- **Expanded schema.org markup** — added `AggregateRating` and `Review` entries so the FAQ and rating data are eligible for rich results.
+- Same lightweight, dependency-free approach as the original: just `index.html`, `styles.css`, and `script.js`, plus one Google Fonts stylesheet link.
+
 ---
 
 ## 📁 Project Structure
