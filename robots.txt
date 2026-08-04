@@ -9,6 +9,9 @@ Disallow: /private/
 # Sitemap locations
 Sitemap: https://sparkleoklahoma.com/sitemap.xml
 Sitemap: https://sparkleoklahoma.com/sitemap.txt
+Sitemap: https://sparkleoklahoma.com/sitemap.json
+Sitemap: https://sparkleoklahoma.com/sitemap.html
+
 
 # AI Agents
 User-agent: GPTBot
