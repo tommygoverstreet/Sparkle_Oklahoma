@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://sparkleoklahoma.com/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://sparkleoklahoma.com/#about</loc>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://sparkleoklahoma.com/#services</loc>
+    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Reviews -->
+  <url>
+    <loc>https://sparkleoklahoma.com/#reviews</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQ (AEO) -->
+  <url>
+    <loc>https://sparkleoklahoma.com/#faq</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://sparkleoklahoma.com/#contact</loc>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Sitemap TXT -->
+  <url>
+    <loc>https://sparkleoklahoma.com/sitemap.txt</loc>
+    <priority>0.50</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Well-known directory -->
+  <url>
+    <loc>https://sparkleoklahoma.com/.well-known/security.txt</loc>
+    <priority>0.40</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sparkleoklahoma.com/.well-known/ai.txt</loc>
+    <priority>0.40</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sparkleoklahoma.com/.well-known/humans.txt</loc>
+    <priority>0.40</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
