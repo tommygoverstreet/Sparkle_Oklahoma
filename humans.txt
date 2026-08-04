@@ -1,0 +1,13 @@
+/* TEAM */
+Developer: TOMMY OVERSTREET
+Company: Sparkle Oklahoma
+Location: Oklahoma City, OK
+Website: https://sparkleoklahoma.com
+
+/* ABOUT */
+Sparkle Oklahoma is a locally owned residential and commercial cleaning company serving the Oklahoma City metro.
+We believe a clean space creates a better life.
+
+/* TECHNOLOGY */
+Built with: HTML, CSS, JavaScript
+Optimized for: SEO, Local SEO, AEO, AI Search Engines
