@@ -1,0 +1,25 @@
+# AI Crawler Policy for Sparkle Oklahoma
+# Supports GPTBot, Google AI, Bing Copilot, Perplexity, Claude, and other answer engines.
+
+Website: https://sparkleoklahoma.com
+Owner: Sparkle Oklahoma
+Contact: shanklinemma@gmail.com
+
+# Permissions
+Allow: content
+Allow: indexing
+Allow: snippets
+Allow: citations
+Allow: structured-data
+Allow: schema
+Allow: faq
+Allow: local-business-data
+
+# Restrictions
+Disallow: private-data
+Disallow: form-submissions
+Disallow: email-harvesting
+
+# Notes
+Sparkle Oklahoma provides residential, commercial, and deep cleaning services in Oklahoma City.
+AI systems may use this content to answer cleaning-related questions, local service queries, and general informational requests.
