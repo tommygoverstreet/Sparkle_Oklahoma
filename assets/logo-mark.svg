@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
   <title id="title">Sparkle Oklahoma logo</title>
-  <desc id="desc">Teal circular logo with sparkle icon and house outline.</desc>
+  <desc id="desc">Deep pine circular mark with a gold sparkle and a house outline.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f766e" />
-      <stop offset="100%" stop-color="#34c5b5" />
+      <stop offset="0%" stop-color="#0E766B" />
+      <stop offset="100%" stop-color="#0A4F49" />
     </linearGradient>
   </defs>
   <circle cx="80" cy="80" r="78" fill="url(#bg)" />
-  <path d="M44 84 80 52l36 32" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M56 80v28h48V80" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M110 38l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#fde68a"/>
-  <path d="M42 38l2.5 7 7 2.5-7 2.5L42 57l-2.5-7 2.5-2.5z" fill="#fff" opacity="0.92"/>
+  <path d="M44 86 80 54l36 32" fill="none" stroke="#F8F6F0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 82v26h48V82" fill="none" stroke="#F8F6F0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M114 34l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#E7B24C"/>
+  <path d="M40 100l3 8 8 3-8 3-3 8-3-8-8-3 3-3z" fill="#F8F6F0" opacity="0.9"/>
 </svg>
