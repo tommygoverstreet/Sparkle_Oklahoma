@@ -3,6 +3,7 @@ const nav = document.querySelector(".nav");
 const themeToggle = document.getElementById("themeToggle");
 const root = document.documentElement;
 const storedTheme = localStorage.getItem("sparkle-theme");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (storedTheme === "dark") {
   root.classList.add("dark");
@@ -37,6 +38,27 @@ if (themeToggle) {
     const isDark = root.classList.toggle("dark");
     localStorage.setItem("sparkle-theme", isDark ? "dark" : "light");
   });
+}
+
+if (!prefersReducedMotion && "IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+  document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+} else {
+  document.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
 }
 
 const contactForm = document.getElementById("contactForm");
