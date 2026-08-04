@@ -360,6 +360,29 @@ form {
   font-size: 1rem;
 }
 
+
+/* -----------------------------------------------------------
+   Animations
+----------------------------------------------------------- */
+/* Sparkle Animation */
+@keyframes sparkle {
+  0% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.1) rotate(45deg); }
+  100% { opacity: 0; transform: scale(0.5) rotate(90deg); }
+}
+
+.sparkle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, #ffffff 40%, var(--brand-accent));
+  border-radius: 50%;
+  animation: sparkle var(--sparkle-duration) infinite ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+}
+
+
 /* -----------------------------------------------------------
    Responsive
 ----------------------------------------------------------- */
@@ -393,3 +416,7 @@ form {
     flex-direction: column;
   }
 }
+
+
+
+
