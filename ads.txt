@@ -1,0 +1,2 @@
+# Sparkle Oklahoma Ads Authorization
+# Leave empty unless using Google AdSense or ad partners.
