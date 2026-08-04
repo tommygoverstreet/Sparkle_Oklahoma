@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sparkle Oklahoma social sharing graphic</title>
+  <desc id="desc">Marketing graphic promoting Sparkle Oklahoma cleaning services in Oklahoma City.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="55%" stop-color="#d1fae5" />
+      <stop offset="100%" stop-color="#99f6e4" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="32"/>
+  <circle cx="1000" cy="120" r="90" fill="#fef3c7" opacity="0.75"/>
+  <circle cx="170" cy="110" r="56" fill="#ffffff" opacity="0.8"/>
+  <rect x="70" y="80" width="1060" height="470" rx="42" fill="#ffffff" opacity="0.94"/>
+  <rect x="680" y="130" width="360" height="340" rx="36" fill="url(#card)"/>
+  <path d="M795 264l68-58 68 58" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M818 260v90h90v-90" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M952 176l8 22 22 8-22 8-8 22-8-22-22-8 22-8z" fill="#fde68a"/>
+  <text x="120" y="220" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700">Sparkle Oklahoma</text>
+  <text x="120" y="300" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="68" font-weight="800">House cleaning that</text>
+  <text x="120" y="376" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="68" font-weight="800">feels calm, polished,</text>
+  <text x="120" y="452" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="68" font-weight="800">and guest-ready.</text>
+  <text x="120" y="520" fill="#3f5f5d" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="600">Residential • Deep Cleaning • Office Cleaning • Oklahoma City Metro</text>
+</svg>

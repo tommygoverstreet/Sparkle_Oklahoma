@@ -1,71 +1,72 @@
-// Mobile nav toggle
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
+const themeToggle = document.getElementById("themeToggle");
+const root = document.documentElement;
+const storedTheme = localStorage.getItem("sparkle-theme");
+
+if (storedTheme === "dark") {
+  root.classList.add("dark");
+}
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    const isOpen = nav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
 
-// Smooth scroll for nav links
-document.querySelectorAll(".nav a").forEach(link => {
-  link.addEventListener("click", e => {
-    const href = link.getAttribute("href");
-    if (href && href.startsWith("#")) {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-        nav.classList.remove("open");
-      }
+document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (nav && nav.classList.contains("open")) {
+      nav.classList.remove("open");
+      navToggle?.setAttribute("aria-expanded", "false");
     }
   });
 });
 
-// FAQ accordion
-const faqQuestions = document.querySelectorAll(".faq-question");
-
-faqQuestions.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const answer = btn.nextElementSibling;
-    const isOpen = answer.style.display === "block";
-    document.querySelectorAll(".faq-answer").forEach(a => (a.style.display = "none"));
-    if (!isOpen) {
-      answer.style.display = "block";
-    }
+document.querySelectorAll(".faq-item").forEach((item) => {
+  const button = item.querySelector(".faq-question");
+  button?.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(isOpen));
   });
 });
 
-// Contact form (front-end only)
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = root.classList.toggle("dark");
+    localStorage.setItem("sparkle-theme", isDark ? "dark" : "light");
+  });
+}
+
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
 if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    formStatus.textContent = "Thank you! We’ll reach out soon to confirm your cleaning details.";
-    contactForm.reset();
-  });
-}
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    formStatus.className = "form-status";
+    formStatus.textContent = "Sending your request...";
 
-// Newsletter form (front-end only)
-const newsletterForm = document.getElementById("newsletterForm");
-const newsletterStatus = document.getElementById("newsletterStatus");
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json"
+        }
+      });
 
-if (newsletterForm && newsletterStatus) {
-  newsletterForm.addEventListener("submit", e => {
-    e.preventDefault();
-    newsletterStatus.textContent = "You’re subscribed! Expect cleaning tips and seasonal specials in your inbox.";
-    newsletterForm.reset();
-  });
-}
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
 
-// Theme toggle (dark mode)
-const themeToggle = document.getElementById("themeToggle");
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");
+      formStatus.classList.add("is-success");
+      formStatus.textContent = "Thanks! Your request was sent successfully. Sparkle Oklahoma will follow up by email soon.";
+      contactForm.reset();
+    } catch (error) {
+      formStatus.classList.add("is-error");
+      formStatus.textContent = "We couldn't send the form right now. Please call 405-409-3466 or email shanklinemma@gmail.com.";
+    }
   });
 }
